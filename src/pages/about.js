@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from '../components/header'
-import Container from '../components/container'
+import Layout from '../components/layout'
 
 import aboutStyles from './about.module.css'
 
@@ -19,8 +18,8 @@ const User = ({
 )
 
 export default () => (
-  <Container>
-    <Header siteTitle="About Gatsby" />
+  <Layout>
+    <h2>About</h2>
     <p>Such wow. Very React.</p>
     <User
       username="Jane Doe"
@@ -32,5 +31,5 @@ export default () => (
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
       excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
-  </Container>
+  </Layout>
 )
